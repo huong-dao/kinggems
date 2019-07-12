@@ -906,6 +906,107 @@ section.promotion-search form input[type="submit"],
 }
 /* End Shop Page */
 
+/* Top Up Page */
+.topup-page {
+    padding: 45px 0;
+    background: #ccc;
+}
+.page-title-sub {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    line-height: 25px;
+    margin-bottom: 95px;
+}
+.topup-pack {
+    background: #fff;
+    border-top: 5px solid #ff3600;
+}
+
+.topup-pack .pack-name {
+    background: #000;
+    color: #ffdd00;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 75px;
+    margin-bottom: 29px;
+}
+.topup-pack .pack-info {
+    /* padding-bottom: 10px; */
+}
+.topup-pack .pack-info .pack-info-line {
+    height: 60px;
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+.topup-pack .pack-info .pack-info-line .price, .topup-pack .pack-info .pack-info-line .king-coin-price {
+    border: 1px solid #000;
+    line-height: 60px;
+    display: inline-block;
+    width: 39%;
+    height: 60px;
+}
+
+.topup-pack .pack-info .pack-info-line .price sup {
+    font-size: 23px;
+}
+
+.topup-pack .pack-info .pack-info-line .king-coin-price {
+    width: 25%;
+    float: left;
+}
+.topup-pack .pack-info .pack-info-line .ico-king-coin {
+    float: left;
+    width: 39px;
+    height: 39px;
+    background: url(../images/ico-king-coint.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 10px 20px 0 0;
+}
+.topup-pack .pack-info .pack-info-line .pack-king-price {
+    display: flex;
+    justify-content: center;
+}
+.topup-pack .pack-info .pack-info-line .kc-text {
+    float: left;
+    font-size: 20px;
+    line-height: 60px;
+    margin-left: 20px;
+}
+
+.topup-pack .pack-info .pack-info-line .pack-qty button {
+    float: left;
+    width: 75px;
+    border: 0;
+    background: #ffdd00;
+    height: 60px;
+}
+
+.topup-pack .pack-info .pack-info-line .pack-qty .pack-qty-txt {
+    width: 75px;
+    float: left;
+    background: #ccc;
+    border: 0;
+    height: 60px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.topup-pack .pack-info .pack-info-line .pack-qty {
+    display: inline-block;
+}
+
+/* End Top Up Page */
+
 /* Global Control */
 a.cus-btn {
     line-height: 45px;
@@ -917,6 +1018,9 @@ a.cus-btn {
     text-transform: uppercase;
     display: inline-block;
     font-weight: bold;
+}
+a.cus-btn.yellow {
+    background: #ffdd00;
 }
 
 a.cus-btn.gray-btn {
@@ -1434,6 +1538,33 @@ a.cus-btn.gray-btn {
         height: 20px;
         width: 20px;
     }
+    /* Top Up */
+    .topup-pack .pack-info .pack-info-line {
+        height: 45px;
+    }
+    .topup-pack .pack-info .pack-info-line .price {
+        width: 58%;
+    }
+    .topup-pack .pack-info .pack-info-line, .topup-pack .pack-info .pack-info-line .pack-qty .pack-qty-txt {
+        font-size: 25px;
+    }
+    .topup-pack .pack-info .pack-info-line .pack-qty button, .topup-pack .pack-info .pack-info-line .pack-qty .pack-qty-txt {
+        width: 55px;
+    }
+    .topup-pack .pack-name {
+        font-size: 30px;
+        line-height: 55px;
+    }
+    .topup-pack .pack-info .pack-info-line .ico-king-coin {
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+    }
+    .topup-pack .pack-info .pack-info-line .kc-text {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    
 }
 
 @media(max-width: 736px) {
