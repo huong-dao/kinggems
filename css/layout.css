@@ -1338,6 +1338,9 @@ button.cus-btn {
     .top-header .right-box {
         width: 75%;
     }
+    .footer .bot-footer .footer-security {
+        width: 23%;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -1788,6 +1791,16 @@ button.cus-btn {
     /* Refer */
     .refer-qa-list .qa-item {
         width: 100%;
+    }
+    #refer-by-mails-popup {
+        padding: 20px;
+    }
+    #refer-by-mails-popup table thead td {
+        font-size: 17px;
+    }
+    #refer-by-mails-popup table thead td:nth-child(2),
+    #refer-by-mails-popup table thead td:nth-child(3) {
+        width: 50% !important;
     }
 }
 
