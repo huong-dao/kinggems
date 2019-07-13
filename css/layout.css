@@ -1027,6 +1027,11 @@ a.cus-btn.yellow, .cus-btn.yellow {
 a.cus-btn.gray-btn, .cus-btn.gray-btn {
     background: #ccc;
 }
+button.cus-btn {
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+}
 /* End Global Control */
 
 /* Refer */
@@ -1138,6 +1143,44 @@ a.cus-btn.gray-btn, .cus-btn.gray-btn {
 
 .refer-qa-list .qa-item .qa-answer ul {
     margin: 30px 0 30px 40px;
+}
+#refer-by-mails-popup, .btn-add-more-refer-mail {
+    background: #ccc;
+    font-size: 16px;
+}
+#refer-by-mails-popup table {
+    width: 100%;
+}
+#refer-by-mails-popup table thead td {
+    font-size: 20px;
+    font-weight: bold;
+}
+#refer-by-mails-popup table input {
+    border: 1px solid #000;
+    height: 30px;
+    padding: 0 15px;
+    width: 100%;
+}
+#refer-by-mails-popup table td {
+    padding: 5px;
+}
+#refer-by-mails-popup table tbody tr td:first-child {
+    font-weight: bold;
+    padding: 5px 20px 5px 0;
+}
+#refer-by-mails-popup table tfoot td:last-child {
+    text-align: right;
+}
+#refer-by-mails-popup table tfoot .btn-add-more-refer-mail {
+    font-style: italic;
+    text-decoration: underline;
+    color: #000;
+}
+#refer-by-mails-popup .fancybox-close-small {
+    background: #000;
+    color: #fff;
+    opacity: 1;
+    padding: 1px;
 }
 /* End Refer */
 

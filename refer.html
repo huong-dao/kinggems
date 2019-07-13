@@ -15,6 +15,7 @@
     <link rel='stylesheet' id='font-awesome-four-css'  href='css/font-awesome-all.css' type='text/css' media='all' />
     <link rel='stylesheet' id='contact-form-7-css' href='css/layout.css' type='text/css' media='all' />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     
 
     <script
@@ -23,6 +24,7 @@
 			  crossorigin="anonymous"></script>
     <script type='text/javascript' src='js/bootstrap.min.js'></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </head>
 
 <body class="global-bg">
@@ -125,13 +127,64 @@
                                 <button class="click-to-copy-btn" type="button">Copy</button>
                             </div>
                             <div class="refer-socials">
-                                <a class="refer-social-item mail" href="#"></a>
+                                <a class="refer-social-item mail open-mail-popup" href="#refer-by-mails-popup"></a>
                                 <a class="refer-social-item fb" href="#"></a>
                                 <a class="refer-social-item tw" href="#"></a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="refer-by-mails-popup" style="display: none; width: 770px; max-width: 100%;">
+                <form action="">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td style="width: 30%;">Friend's Name</td>
+                                <td style="width: 67%;">Friend's Mail</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr tr-num="1">
+                                <td>1</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr tr-num="2">
+                                <td>2</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr tr-num="3">
+                                <td>3</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr tr-num="4">
+                                <td>4</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr tr-num="5">
+                                <td>5</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <a class="btn-add-more-refer-mail" href="javascript:;">Add more</a>
+                                </td>
+                                <td>
+                                    <button type="submit" class="cus-btn yellow">Send</button>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </form>
             </div>
         </section>
         
@@ -310,18 +363,30 @@
                 }
             });
 
-            $('.product-temple-total .quantity-box button.quantity-plus').click(function(){
-                var _qty = $('.product-temple-total .quantity-box input').val();
-                _qty = parseInt(_qty)+1;
-                $('.product-temple-total .quantity-box input').val(_qty);
+            $('.click-to-copy-btn').click(function(){
+                var _tempElement = $("<input>");
+                $(this).parent().find('input').val($(this).parent().find('input').val()).select();
+                document.execCommand("copy");
             });
 
-            $('.product-temple-total .quantity-box button.quantity-minus').click(function(){
-                var _qty = $('.product-temple-total .quantity-box input').val();
-                if(parseInt(_qty) > 1){
-                    _qty = parseInt(_qty)-1;
-                }
-                $('.product-temple-total .quantity-box input').val(_qty);
+            $(".open-mail-popup").fancybox({
+                maxWidth	: 800,
+                maxHeight	: 600,
+                fitToView	: false,
+                width		: '70%',
+                height		: '70%',
+                autoSize	: false,
+                closeClick	: false,
+                openEffect	: 'none',
+                closeEffect	: 'none'
+            });
+
+            $('.btn-add-more-refer-mail').click(function(){
+                var _newReferMailRow = $('#refer-by-mails-popup table tbody tr:last-child').clone();
+                var _newNum = parseInt(_newReferMailRow.attr('tr-num')) + 1;
+                _newReferMailRow.attr('tr-num', _newNum);
+                _newReferMailRow.find('td:first-child').html(_newNum);
+                $('#refer-by-mails-popup table tbody').append(_newReferMailRow);
             });
         });
     </script>
