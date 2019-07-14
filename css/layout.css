@@ -1261,6 +1261,20 @@ section.register-page {
     border-color: red;
 }
 
+.form-group.has-error .help-block-error {
+    display: inline-block;
+    font-size: 16px;
+    font-style: italic;
+    text-align: right;
+    color: red;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.form-group.has-error .form-control {
+    border-color: red;
+}
+
 .register-block p {
     margin-bottom: 20px;
 }
