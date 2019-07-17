@@ -70,6 +70,14 @@ input:focus, select, button:focus {
     width: 100%;
 }
 
+.no-mar-top {
+    margin-top: 0 !important;
+}
+
+
+.no-mar-bot {
+    margin-bottom: 0 !important;
+}
 
 
 
@@ -231,6 +239,10 @@ section.header .top-header {
     font-size: 14px;
     color: #fff;
     font-weight: bold;
+}
+
+.top-header .right-box .main-nav .search-box input[type="text"]::placeholder {
+    color: #fff;
 }
 
 .top-header .right-box .main-nav .search-box input[type="submit"] {
@@ -502,7 +514,7 @@ a.main-btn,
 }
 
 .small-container {
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -831,8 +843,7 @@ section.promotion-search form, .shop-search form {
     display: inline-block;
 }
 
-section.promotion-search form input[type="text"],
-.shop-search form input[type="text"] {
+section.promotion-search form input[type="text"], .shop-search form input[type="text"] {
     height: 45px;
     background: none;
     border: 0;
@@ -841,6 +852,10 @@ section.promotion-search form input[type="text"],
     padding: 0 30px;
     float: left;
     width: 86%;
+}
+
+section.promotion-search form input[type="text"]::placeholder, .shop-search form input[type="text"]::placeholder {
+    color: #fff;
 }
 
 section.promotion-search,
@@ -1552,6 +1567,92 @@ section.register-page {
 }
 /* End Affiliate Page */
 
+
+/* Topup Cart */
+.cart-table {
+    margin-top: 30px;
+}
+
+.cart-table table td {
+    background: #ebebeb;
+    border-right: 1px solid #ccc;
+    padding: 9px 0;
+}
+
+.cart-table table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cart-table table th {
+    background: #707070;
+    color: #fff;
+    border-right: 1px solid #ccc;
+    font-size: 18px;
+    padding: 11px 0;
+}
+
+.cart-table table th:last-child, .cart-table table td:last-child {
+    border-right: 0;
+}
+
+.cart-table table .quantity-box button {
+    height: 35px;
+    border: 1px solid #dcdcdc;
+    background: none;
+    width: 44px;
+    float: left;
+    font-weight: bold;
+}
+
+.cart-table table .quantity-box input {
+    float: left;
+    width: 44px;
+    height: 35px;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    border-left: 0;
+    border-right: 0;
+    background: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cart-table table .quantity-box {
+    display: inline-block;
+}
+
+.cart-table .cart-coupon {
+    display: inline-block;
+    width: 100%;
+}
+
+.cart-table .cart-coupon input[type="text"] {
+    background: #959595;
+    border: 0;
+    width: 30%;
+    max-width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    margin-right: 20px;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.cart-table .cart-coupon input[type="text"]::placeholder {
+    color: #fff;
+}
+
+.apply-coupon-btn {
+    font-size: 14px;
+    line-height: 30px;
+    margin: 10px 0;
+}
+/* End Topup Cart */
+
 /* Footer */
 .footer .top-footer {
     background: #fff;
@@ -1657,7 +1758,7 @@ section.register-page {
     }
 
     .footer .bot-footer .footer-socials {
-        width: 11%;
+        width: 14%;
     }
 
     .footer .top-footer .footer-accept img {
@@ -1690,7 +1791,7 @@ section.register-page {
         width: 75%;
     }
     .footer .bot-footer .footer-security {
-        width: 23%;
+        width: 20%;
     }
 }
 
@@ -1763,10 +1864,6 @@ section.register-page {
     .product-listing .prod-code {
         height: 58px;
         background-size: 100% 100%;
-    }
-
-    .small-container {
-        width: 90%;
     }
 }
 
@@ -2335,6 +2432,21 @@ section.register-page {
     }
     #reward-feed .profit-listing table thead th {
         padding: 9px 10px;
+    }
+    /* Checkout */
+    .cart-table table th {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .cart-table table .quantity-box {
+        padding: 0 5px;
+    }
+    .cart-table table .quantity-box button, .cart-table table .quantity-box input {
+        width: 100%;
+    }
+    .cart-table .cart-coupon input[type="text"] {
+        width: 60%;
+        margin-bottom: 20px;
     }
 }
 
