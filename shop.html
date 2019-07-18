@@ -58,7 +58,9 @@
                                     <a href="javascript:;" class="ico-user-login"><i class="fas fa-user"></i></a>
                                     <div class="login-box">
                                         <form action="">
-                                            <span class="fl-left">Join Now</span>
+                                            <a href="#" class="reg-link">
+                                                <span class="fl-left">Join Now</span>
+                                            </a>
                                             <div class="login-form fl-left">
                                                 <div class="login-control fl-left">
                                                     <input type="text" placeholder="Username">
@@ -103,7 +105,7 @@
                             </div>
                             <div class="header-time-box display-ib">
                                 <span class="fl-left">26/06/2019 | 03:15(GTM+7)</span>
-                                <span class="fl-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                                <span class="fl-right"><marquee behavior="" direction="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</marquee></span>
                             </div>
                         </div>
                     </div>
@@ -127,14 +129,22 @@
                     <div class="col col-sm-12">
                         <div class="shop-search-box">
                             <form action="#" class="">
-                                <input type="text" placeholder="Search">
-                                <input type="submit" value="">
-                            </form>
+                                <div class="shop-search-keyword">
+                                    <input type="text" placeholder="Search">
+                                    <input type="submit" value="">
+                                </div>
+                            
                             <div class="shop-search-paging">
-                                <a href="#"><i class="fas fa-caret-left"></i></a>
+                                <!-- <a href="#"><i class="fas fa-caret-left"></i></a>
                                 <a class="current-page" href="#">2</a>
                                 <a href="#"><i class="fas fa-caret-right"></i></a>
-                                <span>of 10</span>
+                                <span>of 10</span> -->
+
+                                <ul class="pagination">
+                                    <li class="prev disabled"><span>«</span></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li class="next"><a href="#">»</a></li>
+                                </ul>
                             </div>
                             <div class="shop-search-filter">
                                 <select name="" id="">
@@ -143,6 +153,7 @@
                                     <option value="">Z - A</option>
                                 </select>
                             </div>
+                        </form>
                         </div>
                     </div>
                 </div>
