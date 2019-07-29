@@ -2392,6 +2392,10 @@ padding: 30px 0 50px;
         margin: 14px 0;
     }
 
+    .top-header .logo a {
+        position: relative;
+    }
+
     .mobile-nav-block {
         background: #fff;
         padding: 20px;
