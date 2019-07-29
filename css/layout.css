@@ -1365,7 +1365,7 @@ section.register-page {
     color: #ff3600;
 }
 
-.register-block .form-group .form-control, .game-info .form-group .form-control {
+.register-block .form-group .form-control, .game-info .form-group .form-control, .game-confirm .form-group .form-control {
     width: 63%;
     float: left;
     border-radius: 0;
@@ -1817,13 +1817,13 @@ padding: 30px 0 50px;
 }
 
 
-.checkout-tabs-content .game-info {
+.checkout-tabs-content .game-info, .checkout-tabs-content .game-confirm {
     float: left;
     width: 50%;
     padding-right: 50px;
     font-size: 18px;
 }
-.game-info .form-group label {
+.game-info .form-group label, .game-confirm .form-group label {
     float: left;
     width: 37%;
 }
@@ -1899,6 +1899,56 @@ padding: 30px 0 50px;
 
 
 /* End Checkout - Cart */
+
+/* Shop Confirm */
+.ck-confirm-note {
+    display: inline-block;
+    width: 100%;
+    line-height: 50px;
+    margin-bottom: 45px;
+}
+
+.ck-confirm-note .note-ico {
+    background: yellow;
+    border: 3px solid #ff3600;
+    color: #ff3600;
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 20px;
+    line-height: 46px;
+}
+.product-grand-total {
+    margin-top: 28px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.product-grand-total .grand-line {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product-grand-total .grand-line span:last-child {
+    float: right;
+}
+
+.product-grand-total .grand-line.last-line {
+    border-top: 2px solid #959595;
+    padding-top: 18px;
+}
+
+.product-grand-total .grand-line.last-line span:last-child {
+    color: #ff3600;
+    font-size: 24px;
+    line-height: normal;
+}
+/* End Shop Confirm */
 
 /* Footer */
 .footer .top-footer {
