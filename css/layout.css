@@ -1365,11 +1365,14 @@ section.register-page {
     margin: 0;
 }
 
-.register-block label .required, span.required {
+.register-block label .required,
+span.required {
     color: #ff3600;
 }
 
-.register-block .form-group .form-control, .game-info .form-group .form-control, .game-confirm .form-group .form-control {
+.register-block .form-group .form-control,
+.game-info .form-group .form-control,
+.game-confirm .form-group .form-control {
     width: 63%;
     float: left;
     border-radius: 0;
@@ -1377,7 +1380,8 @@ section.register-page {
     height: 33px;
 }
 
-.register-block .form-group .form-control.has-error, .game-info .form-group .form-control.has-error {
+.register-block .form-group .form-control.has-error,
+.game-info .form-group .form-control.has-error {
     border-color: red;
 }
 
@@ -1400,7 +1404,8 @@ section.register-page {
     margin-bottom: 20px;
 }
 
-.register-block .form-group, .form-group {
+.register-block .form-group,
+.form-group {
     margin-bottom: 12px;
     display: inline-block;
     width: 100%;
@@ -1782,8 +1787,9 @@ section.register-page {
 
 /* Checkout - Cart */
 .checkout-page {
-padding: 30px 0 50px;
+    padding: 30px 0 50px;
 }
+
 .checkout-navigation-tabs {
     display: flex;
     justify-content: space-between;
@@ -1832,35 +1838,46 @@ padding: 30px 0 50px;
     color: #525252;
 }
 
-.checkout-tabs-content .game-info, .checkout-tabs-content .game-confirm {
+.checkout-tabs-content .game-info,
+.checkout-tabs-content .game-confirm {
     float: left;
     width: 50%;
     padding-right: 50px;
     font-size: 18px;
 }
-.game-info .form-group label, .game-confirm .form-group label {
+
+.game-info .form-group label,
+.game-confirm .form-group label {
     float: left;
     width: 37%;
 }
 
 
-.form-group .radio-form-control, .form-group .multi-control {
+.form-group .radio-form-control,
+.form-group .multi-control {
     float: left;
     width: 63%;
-  }
-  .form-group .radio-form-control > div {
+}
+
+.form-group .radio-form-control .radio label {
+    width: 100%;
+}
+
+.form-group .radio-form-control>div {
     /*! display: inline-block; */
-  }
-  .game-info .form-group .radio-form-control > div {
+}
+
+.game-info .form-group .radio-form-control>div {
     float: left;
     width: 50%;
-  }
-  .form-group .radio-form-control > div input {
+}
+
+.form-group .radio-form-control>div input {
     margin-right: 7px;
-  }
+}
 
 
-  .form-group .recovery-code-hint-box {
+.form-group .recovery-code-hint-box {
     width: 80%;
     font-size: 10px;
     background: #fff;
@@ -1868,49 +1885,58 @@ padding: 30px 0 50px;
     line-height: normal;
     margin-top: 10px;
     border: 1px solid #9c9c9c;
-  }
-  .form-group .recovery-code-hint-box .top, .form-group .recovery-code-hint-box a {
+}
+
+.form-group .recovery-code-hint-box .top,
+.form-group .recovery-code-hint-box a {
     color: #ff3600;
-  }
-  .form-group .recovery-code-hint-box .top {
+}
+
+.form-group .recovery-code-hint-box .top {
     margin-bottom: 10px;
-  }
-  .form-group .multi-control .form-control {
-	width: 100%;
-	margin-bottom: 20px;
+}
+
+.form-group .multi-control .form-control {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 
 .checkout-tabs-content .checkout-cart-total {
     width: 50%;
     float: left;
-  }
-  .checkout-cart-total .game-name h2 {
+}
+
+.checkout-cart-total .game-name h2 {
     font-size: 24px;
-  }
-  .checkout-cart-total .game-name .game-image {
+}
+
+.checkout-cart-total .game-name .game-image {
     float: left;
     width: 31%;
     margin-right: 30px;
-  }
-  .checkout-cart-total .game-name .game-image img {
+}
+
+.checkout-cart-total .game-name .game-image img {
     width: 100%;
-  }
-  .checkout-cart-total .game-name {
+}
+
+.checkout-cart-total .game-name {
     display: inline-block;
     width: 100%;
-  }
-  .checkout-cart-total .cart-table .cart-coupon input[type="text"] {
+}
+
+.checkout-cart-total .cart-table .cart-coupon input[type="text"] {
     width: 50%;
     font-size: 18px;
-  }
+}
 
-  .ck-submit-form {
-      text-align: center;
-      margin-top: 30px;
-      display: inline-block;
-      width: 100%;
-  }
+.ck-submit-form {
+    text-align: center;
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+}
 
 
 /* End Checkout - Cart */
@@ -1937,6 +1963,7 @@ padding: 30px 0 50px;
     margin-right: 10px;
     line-height: 46px;
 }
+
 .product-grand-total {
     margin-top: 28px;
     font-weight: bold;
@@ -1963,6 +1990,7 @@ padding: 30px 0 50px;
     font-size: 24px;
     line-height: normal;
 }
+
 /* End Shop Confirm */
 
 /* Shop Method */
@@ -1981,6 +2009,7 @@ padding: 30px 0 50px;
 .method-chooser .method-line input {
     margin-right: 22px;
 }
+
 .checkout-cart-total .order-quantity {
     font-size: 18px;
     font-weight: bold;
@@ -1991,6 +2020,7 @@ padding: 30px 0 50px;
     font-weight: normal;
     color: #ff3600;
 }
+
 /* End Shop Method */
 
 /* Footer */
@@ -2609,12 +2639,12 @@ padding: 30px 0 50px;
     .checkout-navigation-tabs {
         height: 50px;
     }
-    
+
     .checkout-navigation-tabs>div {
         line-height: 50px;
         font-size: 15px;
     }
-    
+
     .checkout-navigation-tabs>div span:first-child {
         width: 30px;
         height: 30px;
@@ -2629,25 +2659,25 @@ padding: 30px 0 50px;
         font-size: 20px;
         line-height: 27px;
     }
-    
+
     .ck-confirm-note span:last-child {
         float: left;
         width: calc(100% - 40px);
         line-height: 25px;
     }
-    
+
     .ck-confirm-note {
         margin-bottom: 20px;
     }
-    
+
     .checkout-cart-total .game-name h2 {
         font-size: 18px;
     }
-    
+
     .product-grand-total {
         font-size: 16px;
     }
-    
+
     .product-grand-total .grand-line.last-line span:last-child {
         font-size: 18px;
     }
@@ -2715,9 +2745,11 @@ padding: 30px 0 50px;
     .is-desktop {
         display: none !important;
     }
+
     .is-mobile {
         display: block !important;
     }
+
     body.global-bg {
         background-size: auto 100vh;
         background-position: initial;
@@ -2920,15 +2952,17 @@ padding: 30px 0 50px;
         width: 100%;
         height: auto;
     }
-    
+
     .checkout-navigation-tabs>div {
         width: 100%;
     }
-    
-    .checkout-tabs-content .game-info, .checkout-tabs-content .game-confirm, .checkout-tabs-content .checkout-cart-total {
+
+    .checkout-tabs-content .game-info,
+    .checkout-tabs-content .game-confirm,
+    .checkout-tabs-content .checkout-cart-total {
         width: 100%;
     }
-    
+
     .checkout-tabs-content .game-confirm {
         padding-right: 0;
     }
