@@ -115,65 +115,85 @@
             <div class="bottom-header">
                 <div class="main-slider">
                     <div class="main-slider-bxslider">
-                        <div
-                            style="background: url(images/header-bg.jpg) no-repeat center 0; background-size: auto 100%;">
+                        <div>
+                            <div class="blurred-bg"
+                                style="background: url(images/header-bg.jpg) no-repeat center 0; background-size: auto 100%;">
+                            </div>
                             <div class="container">
                                 <div class="row">
                                     <div class="col col-sm-12">
-                                        <div class="slider-text-box">
-                                            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod</p>
-                                            <p>Food supplement with Serenoa Repens that contributes to supporting
-                                                prostate
-                                                and
-                                                urinary-tract function.</p>
+                                        <div class="slider-image-box">
+                                            <img src="images/header-bg.jpg" alt="">
+                                            <div class="slider-text-box">
+                                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod</p>
+                                                <p>Food supplement with Serenoa Repens that contributes to supporting
+                                                    prostate
+                                                    and
+                                                    urinary-tract function.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            style="background: url(images/header-bg.jpg) no-repeat center 0; background-size: auto 100%;">
+                        <div>
+                            <div class="blurred-bg"
+                                style="background: url(images/header-bg.jpg) no-repeat center 0; background-size: auto 100%;">
+                            </div>
                             <div class="container">
                                 <div class="row">
                                     <div class="col col-sm-12">
-                                        <div class="slider-text-box">
-                                            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod</p>
-                                            <p>Food supplement with Serenoa Repens that contributes to supporting
-                                                prostate
-                                                and
-                                                urinary-tract function.</p>
+                                        <div class="slider-image-box">
+                                            <img src="images/header-bg.jpg" alt="">
+                                            <div class="slider-text-box">
+                                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod</p>
+                                                <p>Food supplement with Serenoa Repens that contributes to supporting
+                                                    prostate
+                                                    and
+                                                    urinary-tract function.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            style="background: url(images/header-bg.jpg) no-repeat center 0; background-size: auto 100%;">
+                        <div>
+                            <div class="blurred-bg"
+                                style="background: url(images/header-bg.jpg) no-repeat center 0; background-size: auto 100%;">
+                            </div>
                             <div class="container">
                                 <div class="row">
                                     <div class="col col-sm-12">
-                                        <div class="slider-text-box">
-                                            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod</p>
-                                            <p>Food supplement with Serenoa Repens that contributes to supporting
-                                                prostate
-                                                and
-                                                urinary-tract function.</p>
+                                        <div class="slider-image-box">
+                                            <img src="images/header-bg.jpg" alt="">
+                                            <div class="slider-text-box">
+                                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod</p>
+                                                <p>Food supplement with Serenoa Repens that contributes to supporting
+                                                    prostate
+                                                    and
+                                                    urinary-tract function.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            style="background: url(images/header-bg.jpg) no-repeat center 0; background-size: auto 100%;">
+                        <div>
+                            <div class="blurred-bg"
+                                style="background: url(images/header-bg.jpg) no-repeat center 0; background-size: auto 100%;">
+                            </div>
                             <div class="container">
                                 <div class="row">
                                     <div class="col col-sm-12">
-                                        <div class="slider-text-box">
-                                            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod</p>
-                                            <p>Food supplement with Serenoa Repens that contributes to supporting
-                                                prostate
-                                                and
-                                                urinary-tract function.</p>
+                                        <div class="slider-image-box">
+                                            <img src="images/header-bg.jpg" alt="">
+                                            <div class="slider-text-box">
+                                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod</p>
+                                                <p>Food supplement with Serenoa Repens that contributes to supporting
+                                                    prostate
+                                                    and
+                                                    urinary-tract function.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -543,6 +563,8 @@
 
     <script>
         $(document).ready(function () {
+            var _headerHeight = $('section.header .top-header').height();
+            $('.main-slider .slider-image-box').css('margin-top', _headerHeight + 'px');
             $('.main-slider-bxslider').bxSlider({
                 pagerSelector: $('.mainSlider-custom-Pager'),
                 nextSelector: $('.main-slider-next-control'),
