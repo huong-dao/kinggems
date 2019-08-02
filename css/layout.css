@@ -2055,6 +2055,33 @@ span.required {
     line-height: normal !important;
     margin-top: 5px;
 }
+.order-final-info {
+    font-size: 18px;
+}
+
+.order-final-info strong {
+    font-size: 20px;
+}
+
+.order-final-info span.order-code-label {
+    background: #ffdd00;
+    font-weight: bold;
+    line-height: 45px;
+    display: inline-block;
+    font-size: 30px;
+    padding: 0 50px;
+}
+
+.order-final-info > div {
+    margin-bottom: 17px;
+}
+.order-info-email-note {
+    margin-top: 45px;
+}
+.review-order-btn {
+    text-decoration: underline;
+    color: #ff3600;
+}
 /* End Topup Confirm */
 
 /* Footer */
@@ -2715,7 +2742,17 @@ span.required {
     .product-grand-total .grand-line.last-line span:last-child {
         font-size: 18px;
     }
-
+    .top-up-confirm .kingcoins-logo {
+        width: 32%;
+    }
+    
+    .top-up-confirm .cart-table {
+        width: 68%;
+    }
+    
+    .top-up-confirm .kingcoins-logo img {
+        width: 88%;
+    }
 }
 
 @media(max-width: 768px) {
@@ -2999,6 +3036,18 @@ span.required {
 
     .checkout-tabs-content .game-confirm {
         padding-right: 0;
+    }
+    .top-up-confirm .kingcoins-logo {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .top-up-confirm .kingcoins-logo img {
+        width: 55%;
+    }
+    
+    .top-up-confirm .cart-table {
+        width: 100%;
     }
 }
 
