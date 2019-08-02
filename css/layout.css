@@ -1567,6 +1567,13 @@ span.required {
     line-height: 40px;
 }
 
+.affiliate-top .has-left-border span {
+    font-size: 20px;
+    color: #ff3600;
+    font-weight: normal;
+    text-transform: none;
+}
+
 .affiliate-top .has-left-border a {
     float: right;
     font-weight: normal;
@@ -2022,6 +2029,33 @@ span.required {
 }
 
 /* End Shop Method */
+
+/* Topup Confirm */
+.top-up-confirm .kingcoins-logo {
+    float: left;
+    width: 33.3333%;
+    margin-top: 30px;
+}
+
+.top-up-confirm .cart-table {
+    float: left;
+    width: 66.6666%;
+}
+
+.top-bar-action {
+    float: right;
+}
+
+.top-bar-action a {
+    font-size: 18px;
+    color: #000 !important;
+    padding-left: 34px;
+    background: url(../images/ico-edit.png) no-repeat 0 center;
+    padding-top: 11px;
+    line-height: normal !important;
+    margin-top: 5px;
+}
+/* End Topup Confirm */
 
 /* Footer */
 .footer .top-footer {
