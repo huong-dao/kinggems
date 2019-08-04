@@ -114,82 +114,74 @@
             </div>
             <div class="bottom-header">
                 <div class="main-slider">
-                    <div class="main-slider-bxslider">
+                    <div class="main-slider-blurred">
                         <div>
-                            <div class="blurred-bg"
-                                style="background: url(images/header-bg.jpg) no-repeat center 0; background-size: auto 100%;">
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col col-sm-12">
+                            <img src="images/header-bg.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="images/header-bg-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="images/header-bg.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="images/header-bg-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-sm-12">
+                                <div class="main-slider-bxslider">
+                                    <div>
                                         <div class="slider-image-box">
                                             <img src="images/header-bg.jpg" alt="">
                                             <div class="slider-text-box">
-                                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod</p>
-                                                <p>Food supplement with Serenoa Repens that contributes to supporting
+                                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do
+                                                    eiusmod</p>
+                                                <p>Food supplement with Serenoa Repens that contributes to
+                                                    supporting
                                                     prostate
                                                     and
                                                     urinary-tract function.</p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="blurred-bg"
-                                style="background: url(images/header-bg.jpg) no-repeat center 0; background-size: auto 100%;">
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col col-sm-12">
+                                    <div>
                                         <div class="slider-image-box">
-                                            <img src="images/header-bg.jpg" alt="">
+                                            <img src="images/header-bg-2.jpg" alt="">
                                             <div class="slider-text-box">
-                                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod</p>
-                                                <p>Food supplement with Serenoa Repens that contributes to supporting
+                                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do
+                                                    eiusmod</p>
+                                                <p>Food supplement with Serenoa Repens that contributes to
+                                                    supporting
                                                     prostate
                                                     and
                                                     urinary-tract function.</p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="blurred-bg"
-                                style="background: url(images/header-bg.jpg) no-repeat center 0; background-size: auto 100%;">
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col col-sm-12">
+                                    <div>
                                         <div class="slider-image-box">
                                             <img src="images/header-bg.jpg" alt="">
                                             <div class="slider-text-box">
-                                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod</p>
-                                                <p>Food supplement with Serenoa Repens that contributes to supporting
+                                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do
+                                                    eiusmod</p>
+                                                <p>Food supplement with Serenoa Repens that contributes to
+                                                    supporting
                                                     prostate
                                                     and
                                                     urinary-tract function.</p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="blurred-bg"
-                                style="background: url(images/header-bg.jpg) no-repeat center 0; background-size: auto 100%;">
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col col-sm-12">
+                                    <div>
                                         <div class="slider-image-box">
-                                            <img src="images/header-bg.jpg" alt="">
+                                            <img src="images/header-bg-2.jpg" alt="">
                                             <div class="slider-text-box">
-                                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod</p>
-                                                <p>Food supplement with Serenoa Repens that contributes to supporting
+                                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do
+                                                    eiusmod</p>
+                                                <p>Food supplement with Serenoa Repens that contributes to
+                                                    supporting
                                                     prostate
                                                     and
                                                     urinary-tract function.</p>
@@ -200,6 +192,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12">
@@ -565,10 +558,18 @@
         $(document).ready(function () {
             var _headerHeight = $('section.header .top-header').height();
             $('.main-slider .slider-image-box').css('margin-top', _headerHeight + 'px');
+            $('.main-slider .main-slider-blurred').css('width', 100*$('.main-slider .main-slider-blurred > div').length+'%');
+            $('.main-slider .main-slider-blurred > div').css('width', $('.main-slider .main-slider-blurred').width()/$('.main-slider .main-slider-blurred > div').length+'px');
             $('.main-slider-bxslider').bxSlider({
                 pagerSelector: $('.mainSlider-custom-Pager'),
                 nextSelector: $('.main-slider-next-control'),
-                prevSelector: $('.main-slider-prev-control')
+                prevSelector: $('.main-slider-prev-control'),
+                speed: 1000,
+                onSlideBefore: function($slideElement, oldIndex, newIndex) {
+                    setTimeout(function(){
+                        $('.main-slider .main-slider-blurred').css('left', '-'+(100*newIndex)+'%');
+                    }, 500);
+                },
             });
 
             $('.top-header .right-box a.ico-user-login').click(function () {
