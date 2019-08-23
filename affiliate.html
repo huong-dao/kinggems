@@ -194,6 +194,15 @@
                                                             <th>Amount <span class="tool-tip">?</span></th>
                                                             <th>Status <span class="tool-tip">?</span></th>
                                                             <th>Reward Eta <span class="tool-tip">?</span></th>
+                                                            <th class="thead-pagination">
+                                                                <div class="shop-search-paging affiliate-paging">
+                                                                    <ul class="pagination">
+                                                                        <li class="prev disabled"><span>«</span></li>
+                                                                        <li class="active"><a href="#">1</a></li>
+                                                                        <li class="next"><a href="#">»</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -336,14 +345,14 @@
                 document.execCommand("copy");
             });
 
-            $('.aff-tabs .aff-tabs-nav span').click(function(){
-                var _tabContentId = $(this).attr('tab-content');
-                $('.aff-tabs-content').removeClass('active');
-                $('.aff-tabs-content'+_tabContentId).addClass('active');
+            // $('.aff-tabs .aff-tabs-nav span').click(function(){
+            //     var _tabContentId = $(this).attr('tab-content');
+            //     $('.aff-tabs-content').removeClass('active');
+            //     $('.aff-tabs-content'+_tabContentId).addClass('active');
 
-                $('.aff-tabs .aff-tabs-nav span').removeClass('active');
-                $(this).addClass('active');
-            });
+            //     $('.aff-tabs .aff-tabs-nav span').removeClass('active');
+            //     $(this).addClass('active');
+            // });
         });
     </script>
 </body>
