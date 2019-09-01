@@ -101,6 +101,12 @@ section.header {
     /* background-size: auto 100%; */
 }
 
+section.header .top-header-outter {
+    background: rgba(0, 0, 0, 0.9);
+    position: relative;
+    z-index: 2;
+}
+
 section.header.no-home {
     height: auto !important;
 }
@@ -280,17 +286,23 @@ section.header .top-header {
     width: 100%;
 }
 
-.top-header .header-time-box {
+.top-header .header-time-box, .header-time-box {
     background: rgba(255, 221, 0, 0.87);
-    line-height: 40px;
+    height: 40px;
     font-size: 15px;
     font-family: AndaleMono;
     padding: 0 20px;
     float: left;
     width: 100%;
+    z-index: 2;
+    position: relative;
 }
 
-.top-header .header-time-box span:last-child {
+.header-time-box span {
+    line-height: 40px;
+}
+
+.top-header .header-time-box span:last-child, .header-time-box span:last-child {
     width: 73.5%;
 }
 
@@ -444,7 +456,7 @@ section.header .top-header {
 
 .main-slider .slider-text-box {
     position: absolute;
-    top: 15%;
+    bottom: 20%;
     left: 0;
     margin-left: 25px;
 }
@@ -2954,6 +2966,15 @@ th.thead-pagination {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+    }
+
+    .main-slider .slider-text-box {
+        bottom: auto;
+        top: 15%;
+    }
+
+    .header-time-box {
+        height: auto;
     }
 
     .col-lg-20-per {
