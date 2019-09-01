@@ -117,18 +117,18 @@ section.header .top-header {
 }
 
 .top-header .logo {
-    margin: 14px 0 0 24px;
+    /* margin: 14px 0 0 24px; */
     position: relative;
 }
 
 .top-header .logo a {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 24px;
+    top: 14px;
 }
 
 .top-header .right-box {
-    width: 90%;
+    width: 100%;
 }
 
 .top-header .right-box .login-box {
@@ -281,7 +281,7 @@ section.header .top-header {
 }
 
 .top-header .header-time-box {
-    background: #ffdd00de;
+    background: rgba(255, 221, 0, 0.87);
     line-height: 40px;
     font-size: 15px;
     font-family: AndaleMono;
@@ -2274,10 +2274,6 @@ th.thead-pagination {
 @media (max-width: 1500px) {
     .top-header .logo img {
         width: 250px;
-    }
-
-    .top-header .right-box {
-        width: 75%;
     }
 
     .footer .bot-footer .footer-security {
